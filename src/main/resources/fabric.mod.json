@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "stupidpotatoes",
+	"version": "1.0.0",
+	"name": "stupidpotatoes",
+	"description": "Adds really stupid potatoes. What did you expect?",
+	"authors": [
+		"OmnixLOL",
+		"Honorable Mention: Neon Gelatin"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/stupidpotatoes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.omnix.stupot.Stupidpotatoes"
+		],
+		"fabric-datagen": [
+			"org.omnix.stupot.StupidpotatoesDataGenerator"
+		],
+		"client": [
+			"org.omnix.stupot.StupidpotatoesClient"
+		]
+	},
+	"mixins": [
+		"stupidpotatoes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
