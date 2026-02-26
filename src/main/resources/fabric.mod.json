@@ -19,9 +19,6 @@
 		"main": [
 			"org.omnix.stupot.Stupidpotatoes"
 		],
-		"fabric-datagen": [
-			"org.omnix.stupot.StupidpotatoesDataGenerator"
-		],
 		"client": [
 			"org.omnix.stupot.StupidpotatoesClient"
 		]
