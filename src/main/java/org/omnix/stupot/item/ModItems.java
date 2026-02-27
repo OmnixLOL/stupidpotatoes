@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
@@ -15,9 +16,10 @@ public class ModItems {
     private static Item register(String name) {
         Identifier id = Identifier.of(Stupidpotatoes.MOD_ID, name);
 
-        RegistryKey<Item> key = RegistryKey.of(Registries.ITEM.getKey(), id);
-
-        Item item = new Item(new Item.Settings().registryKey(key));
+        Item item = new Item(
+                new Item.Settings()
+                        .registryKey(RegistryKey.of(RegistryKeys.ITEM, id))
+        );
 
         return Registry.register(Registries.ITEM, id, item);
     }
